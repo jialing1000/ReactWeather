@@ -36,15 +36,16 @@ module.exports = {
   },
   module: {
     loaders: [
-      {
-        loader: 'babel-loader',
-        query: {
-          presets: ['react', 'es2015', 'stage-0']
-        },
-        test: /\.jsx?$/,
-        exclude: /(node_modules|bower_components)/
-      }
+          {
+            loader: 'babel-loader',
+            query: {
+              presets: ['react', 'es2015', 'stage-0']
+            },
+            test: /\.jsx?$/,
+            exclude: /(node_modules|bower_components)/
+        }
     ]
 },
-devtool: 'inline-source-map'
+//devtool: 'inline-source-map'
+devtool: 'eval-source-map'
 };
